@@ -23,7 +23,8 @@ return array(
 	'modules'=>array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'hello'
+			'password'=>'hello',
+            'ipFilters'=>false,
 		),
 	),
 
@@ -39,10 +40,10 @@ return array(
 		//),
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=blog',
+			'connectionString' => 'mysql:host=127.7.161.1;dbname=c9',
 			'emulatePrepare' => true,
-			'username' => 'glob_user',
-			'password' => 'password',
+			'username' => 'ljie_pi',
+			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
