@@ -20,27 +20,32 @@ return array(
 
 	'defaultController'=>'post',
 
+	'modules'=>array(
+		'gii'=>array(
+			'class'=>'system.gii.GiiModule',
+			'password'=>'hello'
+		),
+	),
+
 	// application components
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		'db'=>array(
-			'connectionString' => 'sqlite:protected/data/blog.db',
-			'tablePrefix' => 'tbl_',
-		),
+		//'db'=>array(
+			//'connectionString' => 'sqlite:protected/data/blog.db',
+			//'tablePrefix' => 'tbl_',
+		//),
 		// uncomment the following to use a MySQL database
-		/*
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'glob_user',
+			'password' => 'password',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
-		*/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
