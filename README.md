@@ -1,4 +1,4 @@
 yii-blog
 ========
 
-A blog with Yii framework
+A blog when learning Yii framework
